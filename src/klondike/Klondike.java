@@ -25,14 +25,7 @@ public class Klondike {
 	
 	private void jugar() {
 //		método privado llamado mostrar estado()
-		baraja.mostrar();
-		descarte.mostrar();
-		for(int i=0; i<palos.length; i++){
-			palos[i].mostrar(); 
-		}
-		for(int i=0; i<columnas.length; i++){
-			columnas[i].mostrar(); 
-		}
+		this.mostrar();
 		
 //		Le pongo un menu con las opciones
 //		método privado menu
@@ -77,6 +70,17 @@ public class Klondike {
 	}
 
 	
+	private void mostrar() {
+		baraja.mostrar();
+		descarte.mostrar();
+		for(int i=0; i<palos.length; i++){
+			palos[i].mostrar(); 
+		}
+		for(int i=0; i<columnas.length; i++){
+			columnas[i].mostrar(); 
+		}
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		new Klondike().jugar();
