@@ -28,23 +28,13 @@ public class Klondike {
 		this.mostrar();
 		
 //		Le pongo un menu con las opciones
-//		método privado menu
-		GestorIo gestorIo = new GestorIo();
-		gestorIo.out("1. Mover de baraja a descarte.");
-		gestorIo.out("2. Mover de descarte a palo.");
-		gestorIo.out("3. Mover de descarte a columna.");
-		gestorIo.out("4. Mover de palo a columna.");
-		gestorIo.out("5. Mover de columna a palo.");
-		gestorIo.out("6. Mover de columna a columna.");
-		gestorIo.out("7. Voltear carta en columna.");
-		gestorIo.out("8. Voltear descarte en baraja.");
-		gestorIo.out("9. Salir.");
-		gestorIo.out("Opcion? [1-9]:");
+//		Me creo una Clase Menu
+		Menu menu = new Menu();
 		
 //		Suponemos que mete un número del 1 al 8 y es correcto
 //		método privado seleccionar opcion
-		int opcion = gestorIo.inInt();
-		switch (opcion) {
+		
+		switch (menu.getOpcion()) {
 		case 1:
 			break;
 		case 2:
@@ -82,7 +72,6 @@ public class Klondike {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		new Klondike().jugar();
 	}
 
