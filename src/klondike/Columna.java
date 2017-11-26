@@ -11,4 +11,19 @@ public class Columna {
 		
 	}
 
+	public void moverA(Palo recogerPalo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void moverA(Columna recogerColumna) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void voltear() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

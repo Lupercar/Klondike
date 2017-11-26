@@ -15,5 +15,9 @@ public class Menu {
 		gestorIo.out("Opcion? [1-9]:");
 		return gestorIo.inInt(); 
 	}
+	public void mostrar() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

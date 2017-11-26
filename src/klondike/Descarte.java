@@ -17,4 +17,19 @@ public class Descarte {
 		
 	}
 
+	public void moverA(Palo recogerPalo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void moverA(Columna recogerColumna) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void voltear(Baraja baraja) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
