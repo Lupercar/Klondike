@@ -7,4 +7,9 @@ public class Palo {
 		
 	}
 
+	public void moverA(Columna columna) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -49,6 +49,11 @@ public class Klondike {
 				descarte.moverA(columnas);
 				break;
 			case 4:
+				gestorIo.out("De que palo? [1-4]: ");
+				Palo palo = palos[gestorIo.inInt()-1];
+				gestorIo.out("De que columna? [1-7]: ");
+				Columna columna = columnas[gestorIo.inInt()-1];
+				palo.moverA(columna);
 				break;
 			case 5:
 				break;
