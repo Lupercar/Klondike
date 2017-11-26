@@ -7,4 +7,9 @@ public class Baraja {
 		
 	}
 
+	public void moverA(Descarte descarte) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

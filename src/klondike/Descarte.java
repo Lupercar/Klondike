@@ -7,4 +7,14 @@ public class Descarte {
 		
 	}
 
+	public void moverA(Palo[] palos) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void moverA(Columna[] columnas) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
