@@ -1,23 +1,44 @@
 package klondike;
 	
 public class Menu {
-	GestorIo gestorIo = new GestorIo();
-	public int getOpcion(){
-		gestorIo.out("1. Mover de baraja a descarte.");
-		gestorIo.out("2. Mover de descarte a palo.");
-		gestorIo.out("3. Mover de descarte a columna.");
-		gestorIo.out("4. Mover de palo a columna.");
-		gestorIo.out("5. Mover de columna a palo.");
-		gestorIo.out("6. Mover de columna a columna.");
-		gestorIo.out("7. Voltear carta en columna.");
-		gestorIo.out("8. Voltear descarte en baraja.");
-		gestorIo.out("9. Salir.");
-		gestorIo.out("Opcion? [1-9]:");
-		return gestorIo.inInt(); 
-	}
+	
+	private static final String[] TITULOS = new String[]{
+			"\n1. Mover de baraja a descarte." +
+			"\n2. Mover de descarte a palo." +
+			"\n3. Mover de descarte a columna." +
+			"\n4. Mover de palo a columna." +
+			"\n5. Mover de columna a palo." +
+			"\n6. Mover de columna a columna." +
+			"\n7. Voltear carta en columna." +
+			"\n8. Voltear descarte en baraja." +
+			"\n9. Salir."
+	};
+	
+	public static final Intervalo OPCIONES = new Intervalo(1,9); 
+	
 	public void mostrar() {
-		// TODO Auto-generated method stub
-		
+		GestorIo gestorIo = new GestorIo();
+		for(String titulo : TITULOS){
+			gestorIo.out(titulo);
+		}
 	}
+	
+	public int getOpcion(){
+		GestorIo gestorIo = new GestorIo();
+		int opcion; 
+		boolean error; 
+		do{
+			gestorIo.out("\nOpcion:? [1-9]: ");
+			opcion = gestorIo.inInt(); 
+			error = !OPCIONES.incluye(opcion); 
+			if(error){
+				gestorIo.out("Error!!! Debe ser una opcion entero entre 1 y 9 "); 
+			}
+		}while(error); 
+		
+		return opcion; 
+	}
+	
+	
 
 }
