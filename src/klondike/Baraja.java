@@ -73,7 +73,7 @@ public class Baraja {
 		}
 	}
 
-	private Carta sacar() {
+	public Carta sacar() {
 		assert !this.vacia(); 
 		ultima--;
 		return cartas[ultima];
