@@ -2,7 +2,6 @@ package klondike;
 
 public class Carta {
 
-//	31:38
 	private int palo; 
 	private int numero; 
 	private boolean bocaArriba;				//0			1		2			3
@@ -72,4 +71,5 @@ public class Carta {
 		new GestorIo().out("{" + numero + " de " + palo + "}"); 
 	}
 
+	
 }
